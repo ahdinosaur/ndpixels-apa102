@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/livejs/pixels-apa102#readme",
   "dependencies": {
-    "bl": "^1.1.2"
+    "bl": "^1.1.2",
+    "cwise": "^1.0.9"
   },
   "devDependencies": {
     "buffer-equal": "^1.0.0",

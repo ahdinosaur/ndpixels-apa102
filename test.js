@@ -11,10 +11,10 @@ test('30 white pixels', function (t) {
   var pixels = Ndarray(repeat(pixel, 30), [30, 3])
   var result = apa102(pixels).slice()
   t.ok(equal(result.slice(0, 4), Buffer([0x00, 0x00, 0x00, 0x00])), '32-bit start frame')
-  for (var i = 0; i < 30; i++) {
-    t.ok(equal(result.slice(i*4+4,(i+1)*4+4), Buffer([0xFF, 0xFF, 0xFF, 0xFF])), '32-bit LED frame #' + i)
+  for (var i = 1; i < 1 + 30; i++) {
+    t.ok(equal(result.slice(i * 4, (i + 1) * 4), Buffer([0xFF, 0xFF, 0xFF, 0xFF])), '32-bit LED frame #' + i)
   }
-  t.ok(equal(result.slice(result.length - 2), Buffer([0x00, 0x00])), '16-bit end frame')
+  t.ok(equal(result.slice(i * 4), Buffer([0x00, 0x00])), '16-bit end frame')
   t.equal(result.length, 126)
   t.end()
 })

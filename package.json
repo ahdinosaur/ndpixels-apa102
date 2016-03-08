@@ -1,6 +1,6 @@
 {
   "name": "pixels-apa102",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "given pixels, return buffer to send over spi to apa102 leds",
   "main": "index.js",
   "scripts": {

@@ -1,17 +1,17 @@
 {
-  "name": "ndpixels-apa102",
+  "name": "pixels-apa102",
   "version": "1.0.0",
-  "description": "given ndpixels, return buffer to send over spi to apa102 leds",
+  "description": "given pixels, return buffer to send over spi to apa102 leds",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/livejs/ndpixels-apa102.git"
+    "url": "git+https://github.com/livejs/pixels-apa102.git"
   },
   "keywords": [
-    "ndpixels",
+    "pixels",
     "ndarray",
     "pixel",
     "pixels",
@@ -21,9 +21,9 @@
   "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/livejs/ndpixels-apa102/issues"
+    "url": "https://github.com/livejs/pixels-apa102/issues"
   },
-  "homepage": "https://github.com/livejs/ndpixels-apa102#readme",
+  "homepage": "https://github.com/livejs/pixels-apa102#readme",
   "dependencies": {
     "bl": "^1.1.2"
   },

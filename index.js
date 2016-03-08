@@ -8,9 +8,9 @@
 
 var BufferList = require('bl')
 
-module.exports = ndpixelsApa102
+module.exports = pixelsToApa102Buffer
 
-function ndpixelsApa102 (pixels) {
+function pixelsToApa102Buffer (pixels) {
   // assemble start, body, and end frames
   var bl = BufferList()
 
@@ -52,9 +52,7 @@ function bodyFrame (channels) {
 function numEndBytes (length) {
   // round up numLEDs/2 bits (or numLEDs/16 bytes)
   // https://github.com/tinue/APA102_Pi/blob/master/apa102.py#L94
-  //
-  // https://www.pololu.com/product/2554
-  // https://a.pololu-files.com/picture/0J6578.600.jpg?43cdc8b658def752351be635ab28978e
+  // or
   // https://github.com/pololu/apa102-arduino/blob/30d336dacec08d2f16f654f236a2a7044e6d2168/APA102.h#L82-L121
   return Math.ceil((length - 1) / 16)
 }
